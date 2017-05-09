@@ -13,6 +13,7 @@ RUN set -x \
   php5-fpm=5.6.30-r0 \
   php5-bcmath=5.6.30-r0 \
   php5-curl=5.6.30-r0 \
+  php5-dom=5.6.30-r0 \
   php5-ftp=5.6.30-r0 \
   php5-gd=5.6.30-r0 \
   php5-gettext=5.6.30-r0 \

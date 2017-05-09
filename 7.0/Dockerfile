@@ -13,6 +13,7 @@ RUN set -x \
   php7-fpm=7.0.16-r0 \
   php7-bcmath=7.0.16-r0 \
   php7-curl=7.0.16-r0 \
+  php7-dom=7.0.16-r0 \
   php7-ftp=7.0.16-r0 \
   php7-gd=7.0.16-r0 \
   php7-gettext=7.0.16-r0 \
