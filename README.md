@@ -1,6 +1,8 @@
 # Supported tags and respective Dockerfiles
 
-`7.0.16` , `7.0`, `latest` _([7.0/Dockerfile](https://github.com/wplib/php-fpm-docker/blob/master/7.0/Dockerfile))_
+`7.1.9` , `7.1`, `latest` _([7.0/Dockerfile](https://github.com/wplib/php-fpm-docker/blob/master/7.1/Dockerfile))_
+
+`7.0.25` , `7.0` _([7.0/Dockerfile](https://github.com/wplib/php-fpm-docker/blob/master/7.0/Dockerfile))_
 
 `5.6.30`, `5.6` _([5.6/Dockerfile](https://github.com/wplib/php-fpm-docker/blob/master/5.6/Dockerfile))_
 
