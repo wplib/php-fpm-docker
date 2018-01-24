@@ -13,7 +13,9 @@ It currently provides versions 1.0.0, 1.1.0, 1.2.0 and 1.2.1.
 
 ## Setup
 Simply clone this repository to your local machine
-`git clone https://github.com/wplib/wp-cli-docker.git`
+
+`git clone https://github.com/wplib/php-fpm-docker.git`
+
 and run either...
 
 
