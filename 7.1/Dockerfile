@@ -20,8 +20,6 @@ RUN set -x; \
 	mv mhsendmail_linux_amd64 /usr/local/bin/mhsendmail; \
 	chmod +x /usr/local/bin/mhsendmail
 
-# ln -sf /proc/self/fd/2 /var/log/php7/error.log;
-
 
 COPY files /
 

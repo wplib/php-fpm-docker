@@ -2,37 +2,29 @@
 # Makefile for Docker
 # 
 
-PWD := `pwd`
+VERSIONS = 5.6 7.0 7.1
 
-.PHONY: build push shell run start stop rm release
+BASEDIR = $(shell pwd)
+
+.PHONY: build push release clean list
 
 ################################################################################
 # Image related commands.
 
-build: 
-	cd 5.6; make build
-	cd 7.0; make build
-	cd 7.1; make build
+build:
+	$(foreach ver,$(VERSIONS), cd $(BASEDIR)/$(ver); make $@;)
 
 push:
-	cd 5.6; make push
-	cd 7.0; make push
-	cd 7.1; make push
+	$(foreach ver,$(VERSIONS), cd $(BASEDIR)/$(ver); make $@;)
 
-release: build
-	cd 5.6; make push
-	cd 7.0; make push
-	cd 7.1; make push
+release:
+	$(foreach ver,$(VERSIONS), cd $(BASEDIR)/$(ver); make $@;)
 
 clean:
-	cd 5.6; make clean
-	cd 7.0; make clean
-	cd 7.1; make clean
+	$(foreach ver,$(VERSIONS), cd $(BASEDIR)/$(ver); make $@;)
 
 list:
-	cd 5.6; make list
-	cd 7.0; make list
-	cd 7.1; make list
+	$(foreach ver,$(VERSIONS), cd $(BASEDIR)/$(ver); make $@;)
 
 
 ################################################################################

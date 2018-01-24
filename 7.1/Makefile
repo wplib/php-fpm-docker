@@ -23,14 +23,18 @@ CONTAINER_NAME	?= $(PROJECT)_$(NAME)_$(VERSION)
 
 build: Dockerfile
 	-docker build -t $(IMAGE_NAME):$(VERSION) --build-arg PHP_FPM_VERSION=$(VERSION) .
+ifneq ($(MAJORVERSION),)
 	-docker build -t $(IMAGE_NAME):$(MAJORVERSION) --build-arg PHP_FPM_VERSION=$(MAJORVERSION) .
+endif
 ifeq ($(LATEST),1)
 	docker build -t $(IMAGE_NAME):latest --build-arg PHP_FPM_VERSION=latest .
 endif
 
 push:
 	-docker push $(IMAGE_NAME):$(VERSION)
+ifneq ($(MAJORVERSION),)
 	-docker push $(IMAGE_NAME):$(MAJORVERSION)
+endif
 ifeq ($(LATEST),1)
 	docker push $(IMAGE_NAME):latest
 endif
@@ -40,14 +44,18 @@ release: build
 
 clean:
 	docker image rm $(IMAGE_NAME):$(VERSION)
+ifneq ($(MAJORVERSION),)
 	docker image rm $(IMAGE_NAME):$(MAJORVERSION)
+endif
 ifeq ($(LATEST),1)
 	docker image rm $(IMAGE_NAME):latest
 endif
 
 list:
 	docker image ls $(IMAGE_NAME):$(VERSION)
+ifneq ($(MAJORVERSION),)
 	docker image ls $(IMAGE_NAME):$(MAJORVERSION)
+endif
 ifeq ($(LATEST),1)
 	docker image ls $(IMAGE_NAME):latest
 endif
