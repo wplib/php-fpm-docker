@@ -2,6 +2,10 @@ FROM alpine:3.5
 
 MAINTAINER WPLib Team <team@wplib.org>
 
+ENV HOME /root
+
+ENV DEBIAN_FRONTEND noninteractive
+
 RUN set -x; \
 	apk add --no-cache bash curl gnupg imagemagick openssl; \
 	apk add --no-cache php5=5.6.32-r0 php5-fpm=5.6.32-r0 php5-bcmath=5.6.32-r0 php5-curl=5.6.32-r0 \

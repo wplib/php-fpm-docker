@@ -39,10 +39,17 @@ release: build
 	make push -e VERSION=$(VERSION)
 
 clean:
-	-docker image rm $(IMAGE_NAME):$(VERSION)
-	-docker image rm $(IMAGE_NAME):$(MAJORVERSION)
+	docker image rm $(IMAGE_NAME):$(VERSION)
+	docker image rm $(IMAGE_NAME):$(MAJORVERSION)
 ifeq ($(LATEST),1)
 	docker image rm $(IMAGE_NAME):latest
+endif
+
+list:
+	docker image ls $(IMAGE_NAME):$(VERSION)
+	docker image ls $(IMAGE_NAME):$(MAJORVERSION)
+ifeq ($(LATEST),1)
+	docker image ls $(IMAGE_NAME):latest
 endif
 
 
