@@ -3,7 +3,7 @@
 # 
 
 PROJECT		?= wplib
-NAME		?= php-fpm-docker
+NAME		?= php-fpm
 VERSION		?= 7.1.9
 MAJORVERSION	?= 7.1
 PORTS		?= -p 9000:9000
