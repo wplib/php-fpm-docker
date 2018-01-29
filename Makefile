@@ -2,7 +2,7 @@
 # Makefile for Docker
 # 
 
-VERSIONS = 5.6.32 7.0.25 7.1.9
+VERSIONS = $(sort $(dir $(wildcard */)))
 
 BASEDIR = $(shell pwd)
 
@@ -12,18 +12,22 @@ BASEDIR = $(shell pwd)
 # Image related commands.
 
 build:
+	@echo "Building for versions: $(VERSIONS)"
 	$(foreach ver,$(VERSIONS), cd $(BASEDIR)/$(ver); make $@;)
 
 push:
+	@echo "Pushing to GitHub for versions: $(VERSIONS)"
 	$(foreach ver,$(VERSIONS), cd $(BASEDIR)/$(ver); make $@;)
 
 release:
 	$(foreach ver,$(VERSIONS), cd $(BASEDIR)/$(ver); make $@;)
 
 clean:
+	@echo "Cleaning up for versions: $(VERSIONS)"
 	$(foreach ver,$(VERSIONS), cd $(BASEDIR)/$(ver); make $@;)
 
 list:
+	@echo "Listing for versions: $(VERSIONS)"
 	$(foreach ver,$(VERSIONS), cd $(BASEDIR)/$(ver); make $@;)
 
 

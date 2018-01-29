@@ -1,0 +1,12 @@
+{
+	"project": "wplib",
+	"name": "php-fpm",
+	"version": "7.0.25",
+	"majorversion": "7.0",
+	"latest": "",
+	"ports": "-p 9000:9000",
+	"volumes": "--mount type=bind,source=/var/www,target=/var/www --mount type=bind,source=/srv/sites,target=/srv/sites",
+	"args": "",
+	"env": "PHP_FPM_VERSION"
+}
+
