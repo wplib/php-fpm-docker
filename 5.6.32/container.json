@@ -4,8 +4,10 @@
 	"version": "5.6.32",
 	"majorversion": "5.6",
 	"latest": "",
+	"network": "--network wplibbox",
 	"ports": "-p 9000:9000",
 	"volumes": "--mount type=bind,source=/var/www,target=/var/www --mount type=bind,source=/srv/sites,target=/srv/sites",
+	"restart": "--restart unless-stopped",
 	"args": "",
 	"env": "PHP_FPM_VERSION"
 }
