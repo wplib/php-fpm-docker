@@ -6,9 +6,9 @@
 	"latest": "1",
 	"network": "--network wplibbox",
 	"ports": "-p 9000:9000",
-	"volumes": "--mount type=bind,source=/var/www,target=/var/www --mount type=bind,source=/srv/sites,target=/srv/sites",
+	"volumes": "-v /var/www:/var/www -v /srv/sites:/srv/sites",
 	"restart": "--restart unless-stopped",
-	"args": "",
+	"args": "--add-host 'mailhog:172.18.0.1'",
 	"env": "PHP_FPM_VERSION"
 }
 
