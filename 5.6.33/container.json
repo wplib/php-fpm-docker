@@ -1,7 +1,7 @@
 {
 	"project": "wplib",
 	"name": "php-fpm",
-	"version": "5.6.32",
+	"version": "5.6.33",
 	"majorversion": "5.6",
 	"latest": "",
 	"network": "--network wplibbox",
