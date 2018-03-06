@@ -4,6 +4,7 @@
 	"version": "7.1.14",
 	"majorversion": "7.1",
 	"latest": "1",
+	"class": "processvm",
 	"network": "--network wplibbox",
 	"ports": "-p 9000:9000",
 	"volumes": "-v /var/www:/var/www -v /srv/sites:/srv/sites",
