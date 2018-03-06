@@ -12,15 +12,15 @@
 
 # PHP-FPM Docker Container for WPLib Box
 This is the repository for the [PHP-FPM](https://php-fpm.org/) Docker container implemented for [WPLib-Box](https://github.com/wplib/wplib-box).
-It currently provides versions 5.6.33 7.0.27 7.1.14
+It currently provides versions 5.6.34 7.0.28 7.1.15
 
 
 ## Supported tags and respective Dockerfiles
-`7.1.14`, `7.1`, `latest` _([7.1.14/Dockerfile](https://github.com/wplib/php-fpm-docker/blob/master/7.1.14/Dockerfile))_
+`7.1.15`, `7.1`, `latest` _([7.1.15/Dockerfile](https://github.com/wplib/php-fpm-docker/blob/master/7.1.15/Dockerfile))_
 
-`7.0.27`, `7.0` _([7.0.27/Dockerfile](https://github.com/wplib/php-fpm-docker/blob/master/7.0.27/Dockerfile))_
+`7.0.28`, `7.0` _([7.0.28/Dockerfile](https://github.com/wplib/php-fpm-docker/blob/master/7.0.28/Dockerfile))_
 
-`5.6.33`, `5.6` _([5.6.33/Dockerfile](https://github.com/wplib/php-fpm-docker/blob/master/5.6.33/Dockerfile))_
+`5.6.34`, `5.6` _([5.6.34/Dockerfile](https://github.com/wplib/php-fpm-docker/blob/master/5.6.34/Dockerfile))_
 
 
 ## Using this container.
@@ -43,23 +43,23 @@ A simple `docker pull wplib/php-fpm` will pull down the latest version.
 ### Runtime from Docker Hub
 start - Spin up a Docker container with the correct runtime configs.
 
-`docker run -d --name wplib_php-fpm_7.1.14 --restart unless-stopped --network wplibbox -p 9000:9000 --mount type=bind,source=/var/www,target=/var/www --mount type=bind,source=/srv/sites,target=/srv/sites wplib/php-fpm:7.1.14`
+`docker run -d --name wplib_php-fpm_7.1.15 --restart unless-stopped --network wplibbox -p 9000:9000 --mount type=bind,source=/var/www,target=/var/www --mount type=bind,source=/srv/sites,target=/srv/sites wplib/php-fpm:7.1.15`
 
 stop - Stop a Docker container.
 
-`docker stop wplib_php-fpm_7.1.14`
+`docker stop wplib_php-fpm_7.1.15`
 
 run - Run a Docker container in the foreground, (all STDOUT and STDERR will go to console). The Container be removed on termination.
 
-`docker run --rm --name wplib_php-fpm_7.1.14 --network wplibbox -p 9000:9000 --mount type=bind,source=/var/www,target=/var/www --mount type=bind,source=/srv/sites,target=/srv/sites wplib/php-fpm:7.1.14`
+`docker run --rm --name wplib_php-fpm_7.1.15 --network wplibbox -p 9000:9000 --mount type=bind,source=/var/www,target=/var/www --mount type=bind,source=/srv/sites,target=/srv/sites wplib/php-fpm:7.1.15`
 
 shell - Run a shell, (/bin/bash), within a Docker container.
 
-`docker run --rm --name wplib_php-fpm_7.1.14 -i -t --network wplibbox -p 9000:9000 --mount type=bind,source=/var/www,target=/var/www --mount type=bind,source=/srv/sites,target=/srv/sites wplib/php-fpm:7.1.14 /bin/bash`
+`docker run --rm --name wplib_php-fpm_7.1.15 -i -t --network wplibbox -p 9000:9000 --mount type=bind,source=/var/www,target=/var/www --mount type=bind,source=/srv/sites,target=/srv/sites wplib/php-fpm:7.1.15 /bin/bash`
 
 rm - Remove the Docker container.
 
-`docker container rm wplib_php-fpm_7.1.14`
+`docker container rm wplib_php-fpm_7.1.15`
 
 
 ## Using it from GitHub repo
