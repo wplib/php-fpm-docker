@@ -22,6 +22,7 @@ RUN apk update && \
 
 # Change user from "nginx" to "vagrant". This is required.
 
+COPY container.json /etc/container.json
 COPY files /
 
 EXPOSE 9000
