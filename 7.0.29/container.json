@@ -1,9 +1,9 @@
 {
 	"project": "wplib",
 	"name": "php-fpm",
-	"version": "7.1.15",
-	"majorversion": "7.1",
-	"latest": "1",
+	"version": "7.0.29",
+	"majorversion": "7.0",
+	"latest": "",
 	"class": "processvm",
 	"network": "--network wplibbox",
 	"ports": "-p 9000:9000",
