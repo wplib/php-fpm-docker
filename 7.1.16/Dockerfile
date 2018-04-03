@@ -11,7 +11,7 @@ RUN apk update && \
 		php7-intl=7.1.16-r0 php7-iconv=7.1.16-r0 php7-json=7.1.16-r0 php7-mbstring=7.1.16-r0 \
 		php7-mcrypt=7.1.16-r0 php7-mysqli=7.1.16-r0 php7-opcache=7.1.16-r0 php7-openssl=7.1.16-r0 \
 		php7-pcntl=7.1.16-r0 php7-pspell=7.1.16-r0 php7-session=7.1.16-r0 php7-ctype=7.1.16-r0 \
-		php7-xml=7.1.16-r0 php7-zip=7.1.16-r0 php7-xdebug=2.5.3-r1 php7-pcntl=7.1.16-r0 && \
+		php7-xml=7.1.16-r0 php7-zip=7.1.16-r0 php7-xdebug=2.5.3-r1 php7-pcntl=7.1.16-r0 php7-imagick=3.4.3-r2 && \
 	mkdir -p /run/php && \
 	wget https://github.com/mailhog/mhsendmail/releases/download/v0.2.0/mhsendmail_linux_amd64 && \
 	mv mhsendmail_linux_amd64 /usr/local/bin/mhsendmail && \
