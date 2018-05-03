@@ -12,15 +12,17 @@
 
 # PHP-FPM Docker Container for WPLib Box
 This is the repository for the [PHP-FPM](https://php-fpm.org/) Docker container implemented for [WPLib-Box](https://github.com/wplib/wplib-box).
-It currently provides versions 5.6.35 7.0.29 7.1.16
+It currently provides versions 5.6.36 7.0.30 7.1.16 7.2.5
 
 
 ## Supported tags and respective Dockerfiles
-`7.1.16`, `7.1`, `latest` _([7.1.16/Dockerfile](https://github.com/wplib/php-fpm-docker/blob/master/7.1.16/Dockerfile))_
+`7.2.5`, `7.2`, `latest` _([7.2.5/Dockerfile](https://github.com/wplib/php-fpm-docker/blob/master/7.2.5/Dockerfile))_
 
-`7.0.29`, `7.0` _([7.0.29/Dockerfile](https://github.com/wplib/php-fpm-docker/blob/master/7.0.29/Dockerfile))_
+`7.1.16`, `7.1` _([7.1.16/Dockerfile](https://github.com/wplib/php-fpm-docker/blob/master/7.1.16/Dockerfile))_
 
-`5.6.35`, `5.6` _([5.6.35/Dockerfile](https://github.com/wplib/php-fpm-docker/blob/master/5.6.35/Dockerfile))_
+`7.0.30`, `7.0` _([7.0.30/Dockerfile](https://github.com/wplib/php-fpm-docker/blob/master/7.0.30/Dockerfile))_
+
+`5.6.36`, `5.6` _([5.6.36/Dockerfile](https://github.com/wplib/php-fpm-docker/blob/master/5.6.36/Dockerfile))_
 
 
 ## Using this container.
