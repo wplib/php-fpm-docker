@@ -1,7 +1,7 @@
-![PHP 7.2.x](https://img.shields.io/badge/PHP-7.2-green.svg)
-![PHP 7.1.x](https://img.shields.io/badge/PHP-7.1-green.svg)
-![PHP 7.0.x](https://img.shields.io/badge/PHP-7.0-green.svg)
-![PHP 5.6.x](https://img.shields.io/badge/PHP-5.6-green.svg)
+![PHP 7.2.x](https://img.shields.io/badge/PHP-7.2.x-green.svg)
+![PHP 7.1.x](https://img.shields.io/badge/PHP-7.1.x-green.svg)
+![PHP 7.0.x](https://img.shields.io/badge/PHP-7.0.x-green.svg)
+![PHP 5.6.x](https://img.shields.io/badge/PHP-5.6.x-green.svg)
 
 
 ```
