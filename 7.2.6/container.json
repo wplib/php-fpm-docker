@@ -1,7 +1,7 @@
 {
 	"project": "wplib",
 	"name": "php-fpm",
-	"version": "7.2.5",
+	"version": "7.2.6",
 	"majorversion": "7.2",
 	"latest": "",
 	"class": "processvm",
