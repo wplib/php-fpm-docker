@@ -5,7 +5,7 @@ MAINTAINER WPLib Team <team@wplib.org>
 ENV HOME /root
 
 RUN apk update && \
-	apk add --no-cache bash curl gnupg imagemagick openssl shadow && \
+	apk add --no-cache bash curl gnupg imagemagick openssl shadow pcre php7=7.0.30-r0 && \
 	apk add --no-cache php7-bcmath=7.0.30-r0 php7-ctype=7.0.30-r0 php7-curl=7.0.30-r0 \
 		php7-dom=7.0.30-r0 php7-exif=7.0.30-r0 php7-fpm=7.0.30-r0 \
 		php7-ftp=7.0.30-r0 php7-gd=7.0.30-r0 php7-gettext=7.0.30-r0 php7-iconv=7.0.30-r0 \

@@ -3,16 +3,6 @@
 ![PHP 7.0.x](https://img.shields.io/badge/PHP-7.0.x-green.svg)
 ![PHP 5.6.x](https://img.shields.io/badge/PHP-5.6.x-green.svg)
 
-
-```
- __          _______  _      _ _       ____
- \ \        / /  __ \| |    (_) |     |  _ \
-  \ \  /\  / /| |__) | |     _| |__   | |_) | _____  __
-   \ \/  \/ / |  ___/| |    | | '_ \  |  _ < / _ \ \/ /
-    \  /\  /  | |    | |____| | |_) | | |_) | (_) >  <
-     \/  \/   |_|    |______|_|_.__/  |____/ \___/_/\_\
-```
-
 ![WPLib-Box](https://github.com/wplib/wplib.github.io/raw/master/WPLib-Box-100x.png)
 
 
